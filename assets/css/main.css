@@ -108,41 +108,42 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+/* css code for certifecate  */
+
+/* توسيع عرض نافذة الشهادات لتستوعب 4 مربعات */
+#certificates {
+	max-width: 900px !important; /* يمكنك زيادة هذا الرقم إذا أردتها أعرض */
+	width: 90% !important;
+}
 
 .cert-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 10px;
 	justify-content: center;
 }
 
 .cert-card {
-	background: #1e1e1e; /* لون خلفية المربع */
+	background: #1e1e1e;
 	border: 1px solid #333;
-	border-radius: 10px;
-	padding: 20px;
-	width: 200px;
+	border-radius: 8px;
+	padding: 10px;
+	/* جعل المربعات أصغر لتتسع الأربعة معاً */
+	width: 22%;
+	min-width: 140px;
+	height: 180px;
 	text-align: center;
 	color: white;
 	text-decoration: none;
 	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-	.cert-card:hover {
-		border-color: #ff5e5e; /* لون الإطار عند مرور الفأرة */
-		transform: translateY(-5px);
-	}
 
-	.cert-card .icon {
-		font-size: 2em;
-		color: #ff5e5e; /* لون الأيقونة */
-		margin-bottom: 10px;
-	}
 
-	.cert-card h3 {
-		font-size: 1em;
-		margin: 10px 0;
-	}
 /* Type */
 
 	html {
