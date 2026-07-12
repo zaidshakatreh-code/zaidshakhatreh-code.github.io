@@ -109,6 +109,40 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+.cert-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.cert-card {
+	background: #1e1e1e; /* لون خلفية المربع */
+	border: 1px solid #333;
+	border-radius: 10px;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+	.cert-card:hover {
+		border-color: #ff5e5e; /* لون الإطار عند مرور الفأرة */
+		transform: translateY(-5px);
+	}
+
+	.cert-card .icon {
+		font-size: 2em;
+		color: #ff5e5e; /* لون الأيقونة */
+		margin-bottom: 10px;
+	}
+
+	.cert-card h3 {
+		font-size: 1em;
+		margin: 10px 0;
+	}
 /* Type */
 
 	html {
@@ -1140,9 +1174,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
